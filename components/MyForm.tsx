@@ -45,7 +45,7 @@ export default function MyForm() {
 
   return (
     <>
-      <h1>Add Game to your collection.</h1>
+      <h1>Add a game to your collection.</h1>
       <form onSubmit={handleFormSubmit} className={styles.form}>
         <TextInputField
           title="Title"

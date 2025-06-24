@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "./Form.module.css";
+import styles from "./NavBar.module.css";
 
 const navLinks = [
   { path: "/", name: "Home" },
@@ -9,15 +9,15 @@ const navLinks = [
 
 export default function NavBar() {
   return (
-    <>
+    <div className={styles.navBar}>
       <h1>Video Game Catalog</h1>
       <div>
         {navLinks.map((link) => (
-          <Link href={link.path} key={link.name} className={styles.button}>
+          <Link href={link.path} key={link.name} className={styles.link}>
             {link.name}
           </Link>
         ))}
       </div>
-    </>
+    </div>
   );
 }
